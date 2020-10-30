@@ -1,5 +1,74 @@
-body{
-    width:90%;
-    margin-left: auto;
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+      
+
+.showcase{
+    
+    background-image: url(uber1.webp);
+    background-size: cover;
+    
+    width:100%;
+    height:auto;
+    
+    
+}
+
+.nav-wraper white{
+    width:80%;
+}
+.nav-wraper blue.container{
+    width:80%;
+    margin-left:auto;
     margin-right: auto;
+}
+.container2{
+    display:flex;
+    justify-content:space-between; 
+}
+.brand-logo{
+    margin-left:0px;/*container icerisinde margin verdi!*/
+}
+.flow-text{/*I took Uber a little bit inside*/
+    margin-left:60px;
+}
+.content{
+    max-width:40%;
+    height:auto;
+    border:3px solid white;
+    margin-left:217px;
+    padding-right:100px;
+    padding-left:50px;
+    background:white;
+    color:black;
+    
+}
+.content2{
+    max-width: 40%;
+    margin-left:150px;
+}
+.showcase{
+    background-color:rgb(214, 181, 170);
+}
+.row{
+    
+    width:70%;
+}
+.dropdown-content{
+  min-width: 165px;
+  
+}
+.stretch{
+    height:10rem;
+}
+
+.stretch li:nth-child(2){
+    
+    
 }
