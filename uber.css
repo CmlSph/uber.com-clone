@@ -8,26 +8,25 @@ body {
     flex: 1 0 auto;
   }
       
-
+.flexnavbar{
+    display:flex;
+    flex:1;
+    color:black;
+    width:100%;
+    align-items: flex-start;
+    height: 6rem;
+}
 .showcase{
     
     background-image: url(uber1.webp);
     background-size: cover;
-    
     width:100%;
     height:auto;
-    
-    
+}
+img{
+    margin-left:0;
 }
 
-.nav-wraper white{
-    width:80%;
-}
-.nav-wraper blue.container{
-    width:80%;
-    margin-left:auto;
-    margin-right: auto;
-}
 .container2{
     display:flex;
     justify-content:space-between; 
@@ -65,10 +64,29 @@ body {
   
 }
 .stretch{
+    
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-evenly;
     height:10rem;
 }
 
-.stretch li:nth-child(2){
+@media (max-width:600px){/*floats mobile phone view begins*/
     
+    .row{
+        display:block;
+        width:100%;    
+    }
+    img{
+        width:95%;
+    }
     
+}
+@media only screen and (min-width: 600px) and (max-width: 1024px) /*grid floats tablet view */
+{
+    .row{
+        display:block;
+        width:100%;    
+    }  
 }
