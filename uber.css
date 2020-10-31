@@ -3,10 +3,16 @@ body {
     min-height: 100vh;
     flex-direction: column;
   }
+  .material-icons{
+    display: inline-flex;
+    vertical-align: top;
+}
 
   main {
     flex: 1 0 auto;
   }
+
+
       
 .flexnavbar{
     display:flex;
