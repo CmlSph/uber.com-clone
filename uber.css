@@ -24,7 +24,7 @@ body {
 }
 .showcase{
     
-    background-image: url(uber1.webp);
+    
     background-size: cover;
     width:100%;
     height:auto;
@@ -57,13 +57,15 @@ img{
 .content2{
     max-width: 40%;
     margin-left:150px;
+    margin-top:35px;
 }
 .showcase{
-    background-color:rgb(214, 181, 170);
+    background-color:#eec688;
 }
 .row{
-    
+    margin-top:30px;
     width:70%;
+    margin-left:125px;
 }
 .dropdown-content{
   min-width: 165px;
@@ -71,21 +73,31 @@ img{
 }
 .stretch{
     
-    display:flex;
+    display:block;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content:space-evenly;
     height:10rem;
 }
 
+nav-wraper{
+    display:block;
+}
+
 @media (max-width:600px){/*floats mobile phone view begins*/
     
     .row{
         display:block;
-        width:100%;    
+        width:100%;
+        margin-left:0px;  
     }
     img{
         width:95%;
+    }
+    .img1{
+        position:absolute;
+        vertical-align:bottom;
+
     }
     
 }
@@ -96,3 +108,95 @@ img{
         width:100%;    
     }  
 }
+.cemal{
+    
+        position:relative;
+        align-items:flex-end;
+        bottom:30px;
+        left:50px;
+        top:-2rem;
+        
+      }
+
+      .stretch{
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+        background-color:white;
+        display:flex;
+        flex-direction:row;
+        flex:1;
+        height:100px;
+        align-items:center;
+       }
+      
+      .cemal{
+        position:relative;
+        align-items:flex-end;
+        bottom:30px;
+        left:50px;
+        top:-2rem;
+        
+      }
+      .nocolor{
+        background-color:#eec688;
+        display: block;
+        
+      }
+      
+      .img1{
+        position:absolute;
+        margin-top:50px;
+        z-index:-1;
+        height:750px;
+        width:100%;
+      }
+      
+      @media (max-width:600px){/*floats mobile phone view begins*/
+          
+          .row{
+              display:block;
+              width:100%;    
+          }
+          img{
+              width:95%;
+          }
+        .img1{
+          position:relative;
+          
+        }
+        stretch{
+          position:relative;
+          
+        }
+        .showcase{
+          position:relative;
+          background-color:white;
+        }
+        .nocolor{
+            background-color:white
+        }
+      }
+      @media only screen and (min-width: 600px) and (max-width: 1024px) /*grid floats tablet view */
+      {
+        row{
+              display:block;
+              width:90%;
+              margin-left:auto;
+              margin-right:auto;   
+          }  
+        img1{
+          position:relative
+        }
+        stretch{
+          position:relative;
+        }
+        .showcase{
+            
+            background-color:white;
+          }
+          .nocolor{
+              background-color:white
+          }
+      }
+
