@@ -83,6 +83,18 @@ img{
 nav-wraper{
     display:block;
 }
+.footericons{
+    display:flex;
+    flex-direction:row;
+    width:50%;
+    justify-content: space-between;
+    color:white;
+    margin-left:30px;
+
+}
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram {
+    color:white;
+}
 
 @media (max-width:600px){/*floats mobile phone view begins*/
     
@@ -98,6 +110,12 @@ nav-wraper{
         position:absolute;
         vertical-align:bottom;
 
+    }
+    .footericons{
+        
+        display:flex;
+        width:100%;
+        flex:1
     }
     
 }
