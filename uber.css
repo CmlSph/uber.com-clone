@@ -8,62 +8,23 @@ body {
     vertical-align: top;
 }
 
-  main {
-    flex: 1 0 auto;
-  }
 
-
-      
-.flexnavbar{
-    display:flex;
-    flex:1;
-    color:black;
-    width:100%;
-    align-items: flex-start;
-    height: 6rem;
-}
-.showcase{
-    
+.showcase{/*Top part of the page*/
     
     background-size: cover;
+    background-color:#eec688;
     width:100%;
     height:auto;
 }
-img{
-    margin-left:0;
-}
 
-.container2{
-    display:flex;
-    justify-content:space-between; 
-}
-.brand-logo{
-    margin-left:0px;/*container icerisinde margin verdi!*/
-}
-.flow-text{/*I took Uber a little bit inside*/
-    margin-left:60px;
-}
-.content{
-    max-width:40%;
-    height:auto;
-    border:3px solid white;
-    margin-left:217px;
-    padding-right:100px;
-    padding-left:50px;
-    background:white;
-    color:black;
-    
-}
 .content2{
     max-width: 40%;
     margin-left:150px;
     margin-top:35px;
 }
-.showcase{
-    background-color:#eec688;
-}
+
 .row{
-    margin-top:30px;
+    margin-top:-22px;
     width:70%;
     margin-left:125px;
 }
@@ -71,18 +32,19 @@ img{
   min-width: 165px;
   
 }
-.stretch{
-    
-    display:block;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content:space-evenly;
-    height:10rem;
-}
 
-nav-wraper{
-    display:block;
-}
+.obedienticons{
+    
+    position:relative;
+    align-items:flex-end;
+    bottom:30px;
+    left:50px;
+    top:-2rem;
+    
+  }
+
+
+
 .footericons{
     display:flex;
     flex-direction:row;
@@ -92,11 +54,55 @@ nav-wraper{
     margin-left:30px;
 
 }
+
+
+  .secondnavbar{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    height:8rem;
+    width:80%;
+    margin-top:-15px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:white;
+    flex:1;
+    align-items:center;
+   }
+  
+  
+    
+  
+  .nocolor{
+    background-color:#eec688;
+    display: block;
+    
+  }
+  
+  .img1{
+    position:absolute;
+    margin-top:100px;
+    z-index:-1;
+    width:100%;
+    height:680px;
+    
+  }
+  h6{
+      margin-left:15px;
+  }
 .fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram {
     color:white;
 }
 
-@media (max-width:600px){/*floats mobile phone view begins*/
+.finallinks{
+    width:15%;
+    display:flex;
+    justify-content: start;
+    
+}
+
+@media (max-width:600px){/*mobile phone view begins*/
     
     .row{
         display:block;
@@ -118,103 +124,49 @@ nav-wraper{
         flex:1
     }
     
-}
-@media only screen and (min-width: 600px) and (max-width: 1024px) /*grid floats tablet view */
-{
-    .row{
-        display:block;
-        width:100%;    
-    }  
-}
-.cemal{
     
-        position:relative;
-        align-items:flex-end;
-        bottom:30px;
-        left:50px;
-        top:-2rem;
-        
-      }
+  .img1{
+    position:relative;
+    
+  }
+  
+  .showcase{
+    position:relative;
+    background-color:white;
+  }
+  .nocolor{
+      background-color:white;
+  }
+    
+}/*mobile phone view ends*/
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
 
-      .stretch{
-        width:80%;
-        margin-left:auto;
-        margin-right:auto;
-        background-color:white;
-        display:flex;
-        flex-direction:row;
-        flex:1;
-        height:100px;
-        align-items:center;
-       }
+.cemal{
+    display:flex;
+    flex:1;
+    width:100%;
+    height:100px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    flex-direction: row;
+    
+}
+    
+  img1{
+    position:relative
+  }
+  
+  .showcase{
       
-      .cemal{
-        position:relative;
-        align-items:flex-end;
-        bottom:30px;
-        left:50px;
-        top:-2rem;
-        
-      }
-      .nocolor{
-        background-color:#eec688;
-        display: block;
-        
-      }
-      
-      .img1{
-        position:absolute;
-        margin-top:50px;
-        z-index:-1;
-        height:750px;
-        width:100%;
-      }
-      
-      @media (max-width:600px){/*floats mobile phone view begins*/
-          
-          .row{
-              display:block;
-              width:100%;    
-          }
-          img{
-              width:95%;
-          }
-        .img1{
-          position:relative;
-          
-        }
-        stretch{
-          position:relative;
-          
-        }
-        .showcase{
-          position:relative;
-          background-color:white;
-        }
-        .nocolor{
-            background-color:white
-        }
-      }
-      @media only screen and (min-width: 600px) and (max-width: 1024px) /*grid floats tablet view */
-      {
-        row{
-              display:block;
-              width:90%;
-              margin-left:auto;
-              margin-right:auto;   
-          }  
-        img1{
-          position:relative
-        }
-        stretch{
-          position:relative;
-        }
-        .showcase{
-            
-            background-color:white;
-          }
-          .nocolor{
-              background-color:white
-          }
-      }
+      background-color:white;
+    }
+    .nocolor{
+        background-color:white
+    }
+}
+
+/*tablet view ends*/
+
+
 
